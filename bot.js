@@ -25,9 +25,5 @@ client.on('message', message => {
         message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos');
     }
 });
-bot.on('ready', () => {
-    bot.user.setActivity(`canal do alexey!`, {type: "WATCHING"});
-    console.log('Logado');
-});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
