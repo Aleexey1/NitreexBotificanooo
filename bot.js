@@ -9,7 +9,7 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
     }
-    if (message.content === '/pig'){
+    if (message.content === 'piga'){
         message.reply('pong');
   	}
 });
