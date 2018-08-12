@@ -1,6 +1,6 @@
 import discord
 from discord.ext.comands bot
-from discord.ext import command
+from discord.ext import commands
 import asyncio
 import time
 import os
@@ -16,6 +16,6 @@ async  def on_ready():
 async def on_message(message):
     if message.content.startaqith('/ola'):
         msg = 'Olá (0.authoy.mention) How are you today'.format(message)
-        awiat client.send_message(message.channel,msg)
+        await client.send_message(message.channel,msg)
         
 client.run(os.getenv('TOKEN'))
