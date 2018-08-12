@@ -1,29 +1,44 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+import discord
+import asyncio
+import random
 
-client.on('ready', () => {
-    console.log('Loguei!');
-});
+client = discord.Client()
 
-client.on('message', message => {
-    if (message.content === 'Oi') {
-    	message.reply('Olá, tudo bem ?');
-    }
-    if (message.content === 'piga'){
-        message.reply('pong');
-  	}
-    if (message.content.startsWith('/canal')){
-        message.channel.send('Aqui está: https://www.youtube.com/channel/UCvCRTD0r6niKowGIUACV8NQ');
-    }
-    if (message.content.startsWith('/twitter')){
-        message.channel.send('Aqui está: https://twitter.com/AlexeyOficial');
-    } 
-    if (message.content.startsWith('/loja')){
-        message.channel.send('Aqui está: http://blastcraft.com.br/');
-    }
-    if (message.content.startsWith('/comandos')){
-        message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos');
-    }
-});
+
+@client.event
+async def on_ready():
+    print('BOT ONLINE - OLÁ MUNDO')
+    print(client.user.name)
+    print(client.user.id)
+    print('-----PR------')
+
+    await client.change_presence(game=discord.Game(name=" mensagem ", type=1))
+
+@client.event
+async def on_message(message):
+    if message.content.lower().startswith('/test'):
+        await client.send_message(message.channel, "Olá Mundo, estou vivo!!")
+
+    if message.content.lower().startswith('/loja'):
+        await client.send_message(message.channel, "https://blastcraft.com.br/")
+
+    if message.content.lower().startswith('/twitter'):
+        await client.send_message(message.channel, "Twitter - https://twitter.com/AlexeyOficial")
+
+    if message.content.lower().startswith('/canal'):
+        await client.send_message(message.channel, "Aque está o canal do aleexey: https://www.youtube.com/channel/UCvCRTD0r6niKowGIUACV8NQ")
+
+    if message.content.lower().startswith ('/ajuda'):
+        await client.send_message(message.channel, "Os helps podem te ajudar, se não tiver  nenhum, fale com o configurador, ou o nitroo.")
+
+    if message.content.lower().startswith('/moeda'):
+        if message.author.id == "218030525003071489":  # adicione o seu ID!
+            escolha = random.randint(1, 2)
+            if escolha == 1:
+                await client.add_reaction(message, '😀')
+            if escolha == 2:
+                await client.add_reaction(message, '👑')
+        else:
+            await client.send_message(message.channel, " Você não tem permissão para usar esse comando")
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
