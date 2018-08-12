@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    bot.user.setActivity('meus comandos numa pasta.');
+    client.user.setActivity('meus comandos numa pasta.');
     console.log('Loguei!');
 });
 
