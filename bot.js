@@ -39,6 +39,7 @@ async def on_message(message):
             if escolha == 2:
                 await client.add_reaction(message, '👑')
         else:
-            await client.send_message(message.channel, " Você não tem permissão para usar esse comando")
+            await client.send_message(message.channel, " Você não tem permissão para usar esse comando"):
+            
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
