@@ -1,3 +1,10 @@
+import discord
+import asyncio
+import random
+
+client = discord.Client()
+
+
 @client.event
 async def on_ready():
     print('BOT ONLINE - OLÁ MUNDO')
@@ -33,5 +40,6 @@ async def on_message(message):
                 await client.add_reaction(message, '👑')
         else:
             await client.send_message(message.channel, " Você não tem permissão para usar esse comando")
-// THIS  MUST  BE  THIS  WAY
-client.run(NDc3NjMxODgzOTc5NTIyMDUw.DlEfnw.kgSWC9rLPAaUVRRcMZzt0eGnc0g):
+
+
+client.run('NDc3NjMxODgzOTc5NTIyMDUw.DlEfnw.kgSWC9rLPAaUVRRcMZzt0eGnc0g')
