@@ -1,21 +1,13 @@
 import discord
-from discord.ext.comands bot
-from discord.ext import command
 import asyncio
-import time
-import os
 
-client = discord.clent ()
-client = commands.bot(command_prefix = "/")
+client = discord.client()
+
 @client.event
-async  def on_ready():
-    print("Obrigado por assistir video do bot.")
-    await client.change_presence(game=discord.game(name"video"))
+async def on_ready ():
+    print('BOT ONLINE - Olá Mundo!')
+    print(client.user.name)
+    print(client.user.id)
+    print('--------PR----------')
     
-@client.event
-async def on_message(message):
-    if message.content.startaqith('/ola'):
-        msg = 'Olá (0.authoy.mention) How are you today'.format(message)
-        awiat client.send_message(message.channel,msg)
-        
 client.run(os.getenv('TOKEN'))
