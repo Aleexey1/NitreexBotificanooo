@@ -1,19 +1,29 @@
-import discord
-from discord.ext.comands
-from discord.ext import commands
-import asyncio
-import os
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-client = discord.client()
-client = commands.bot(command_prefix = "/")
-async def on_ready():
-    print("Thankyou For Using Video Bot")
-    await client.change_presence(game=discord.game(name="videos"))
+client.on('ready', () => {
+    console.log('Loguei!');
+});
 
-@client.event
-async def on_message(message):
-    if message.content.startswith('/loja'):
-        msg = 'Olá (0.author.mention) How are you today'.format(message)
-        await client.send_message(message.channel, msg)
-
-client.run(os.getenv('TOKEN'))
+client.on('message', message => {
+    if (message.content === 'Oi') {
+    	message.reply('Olá, tudo bem ?');
+    }
+    if (message.content === 'piga'){
+        message.reply('pong');
+  	}
+    if (message.content.startsWith('/canal')){
+        message.channel.send('Aqui está: https://www.youtube.com/channel/UCvCRTD0r6niKowGIUACV8NQ');
+    }
+    if (message.content.startsWith('/twitter')){
+        message.channel.send('Aqui está: https://twitter.com/AlexeyOficial');
+    } 
+    if (message.content.startsWith('/loja')){
+        message.channel.send('Aqui está: http://blastcraft.com.br/');
+    }
+    if (message.content.startsWith('/comandos')){
+        message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos');
+    }
+});
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
