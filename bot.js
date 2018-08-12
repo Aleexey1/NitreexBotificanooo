@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    client.user.setActivity('meus comandos numa pasta.');
+bot.on('ready', () => {
+    bot.user.setActivity('meus comandos numa pasta.');
     console.log('Loguei!');
 });
 
-client.on('message', message => {
+bot.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
     }
