@@ -34,4 +34,4 @@ async def on_message(message):
         else:
             await client.send_message(message.channel, " Você não tem permissão para usar esse comando")
 // THIS  MUST  BE  THIS  WAY
-client.run(process.env.BOT_TOKEN):
+client.run(NDc3NjMxODgzOTc5NTIyMDUw.DlEfnw.kgSWC9rLPAaUVRRcMZzt0eGnc0g):
