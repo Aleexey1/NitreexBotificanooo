@@ -6,6 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    bot.user.setActivity(`canal do alexey!`, {type: "WATCHING"});
+    console.log('Logado');
+    
     if (message.content === 'ping') {
     	message.reply('pong');
     }
