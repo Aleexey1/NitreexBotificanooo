@@ -25,5 +25,5 @@ client.on('message', message => {
         message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos');
     }
 });
-
-client.login(NDc3NjMxODgzOTc5NTIyMDUw.DlEfnw.kgSWC9rLPAaUVRRcMZzt0eGnc0g);
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
