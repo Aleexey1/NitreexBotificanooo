@@ -6,7 +6,6 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    bot.user.setActivity(`porra nenhuma pq bot n assisti`, {type: "WATCHING"});
     if (message.content === 'ping') {
     	message.reply('pong');
     }
