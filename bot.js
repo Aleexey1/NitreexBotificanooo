@@ -42,4 +42,4 @@ async def on_message(message):
             await client.send_message(message.channel, " Você não tem permissão para usar esse comando")
 
 
-client.run('NDc3NjMxODgzOTc5NTIyMDUw.DlEfnw.kgSWC9rLPAaUVRRcMZzt0eGnc0g')
+client.run('token')
