@@ -1,16 +1,12 @@
 const Discord = require('discord.js');
-const Client = new Discord.Client();
+const bot = new Discord.Client();
 
-Client.on('ready', () => {
+
+bot.on('ready', () => {
     console.log('Logado');
 });
 
-Client.on("guildMemberAdd", member => {
-    member.guild.channels.get('443601735244709918').send(member.user.username + ' entrou no sevrer!');
-    member.send('Bem-Vindo ao servidor.');
-});
-
-Client.on('message', message => {
+bot.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
     }
@@ -35,4 +31,4 @@ Client.on('message', message => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
