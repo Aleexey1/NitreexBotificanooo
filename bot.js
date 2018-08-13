@@ -6,5 +6,5 @@ bot.on('ready', () => {
     console.log('Logado');
 });
 
-// THIS  MUST  BE  THIS  WAY
+
 client.login(process.env.BOT_TOKEN);
