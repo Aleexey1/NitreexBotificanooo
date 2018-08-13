@@ -5,6 +5,11 @@ client.on('ready', () => {
     console.log('Loguei!');
 });
 
+client.on("guildMemberAdd", member => {
+    member.guild.channels.get('476793367334748176').send(member.user.username + ' entrou no sevrer!');
+    member.send('Bem-Vindo ao servidor.');
+});
+
 client.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
