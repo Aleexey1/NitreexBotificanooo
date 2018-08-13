@@ -8,7 +8,11 @@ client.on('ready', () => {
 client.on("guildMemberAdd", member => {
     member.guild.channels.get('476793367334748176').send(member.user.username + ' entrou no sever!');
     member.send('Bem-Vindo ao servidor.');
+});
+
+bot.on('ready', () => {
     bot.user.setActivity(`porra nenhuma pq bot n assisti`, {type: "WATCHING"});
+    console.log('Logado');
 });
 
 client.on('message', message => {
