@@ -1,16 +1,13 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
+
+bot.on('ready', () => {
+    bot.user.setActivity('/comandos ')
     console.log('Logado');
 });
 
-client.on("guildMemberAdd", member => {
-    member.guild.channels.get('476793367334748176').send(member.user.username + ' entrou no sever!');
-    member.send('Bem-Vindo ao servidor.');
-});
-
-client.on('message', message => {
+bot.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
     }
