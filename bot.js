@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 
 bot.on('ready', () => {
-    bot.user.setActivity('/comandos ')
+    bot.user.setActivity('/comandos')
     console.log('Logado');
 });
 
