@@ -24,6 +24,9 @@ client.on('message', message => {
     if (message.content.startsWith('/comandos')){
         message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos');
     }
+    if (message.content.startsWith('/novaera')){
+        message.channel.send('NovaEra, é basicamente um série que está em andamento, o criador dela é o aleexey, não sabemos o máximo de pessoas que tem na série mais ela está bem legal, espro que vocês gostem!');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
