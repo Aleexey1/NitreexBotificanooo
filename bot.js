@@ -6,6 +6,7 @@ client.on('ready', () => {
 });
 
 client.on("guildMemberAdd", member => {
+    export.user.setActivity(`porra nenhuma pq bot n assisti`, {type: "WATCHING"});
     member.guild.channels.get('476793367334748176').send(member.user.username + ' entrou no sever!');
     member.send('Bem-Vindo ao servidor.');
 });
