@@ -2,7 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('Loguei!');
+    client.user.setActivity('Merda');
+    console.log('logado');
 });
 
 client.on("guildMemberAdd", member => {
