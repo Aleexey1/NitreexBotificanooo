@@ -1,18 +1,16 @@
 const Discord = require('discord.js');
 const Client = new Discord.Client();
 
-
-client.on('ready', () => {
+Client.on('ready', () => {
     console.log('Logado');
 });
 
-
-client.on("guildMemberAdd", member => {
+Client.on("guildMemberAdd", member => {
     member.guild.channels.get('443601735244709918').send(member.user.username + ' entrou no sevrer!');
     member.send('Bem-Vindo ao servidor.');
 });
 
-client.on('message', message => {
+Client.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
     }
@@ -35,5 +33,6 @@ client.on('message', message => {
         message.channel.send('NovaEra, é basicamente uma série que está em andamento, o criador dela é o aleexey, não sabemos o máximo de pessoas que tem na série mais ela está bem legal, espro que vocês gostem!');
     }
 });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
