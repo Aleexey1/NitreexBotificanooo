@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on("guildMemberAdd", member => {
-    member.guild.channels.get('476108542202347555').send(member.user.username + ' entrou no sevrer!');
+    member.guild.channels.get('476108542202347555').send(member.user.username + ' entrou no sever!');
     member.send('Bem-Vindo ao servidor.');
 });
 
