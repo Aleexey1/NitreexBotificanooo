@@ -8,5 +8,6 @@ const  Discord  =  require ( ' discord.js ' );
     	mensagem . reply ( ' tudo bem? ' );
   	}
 });
+
 // ESTE DEVE SER DESTA FORMA
 cliente . login ( processo . env . BOT_TOKEN );
