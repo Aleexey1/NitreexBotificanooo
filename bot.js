@@ -35,6 +35,5 @@ client.on('message', message => {
         message.channel.send('NovaEra, é basicamente uma série que está em andamento, o criador dela é o aleexey, não sabemos o máximo de pessoas que tem na série mais ela está bem legal, espro que vocês gostem!');
     }
 });
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
