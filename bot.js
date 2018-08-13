@@ -24,7 +24,7 @@ export.run = (clientInformation,nessage,args)=>{
     .addField("razão:", razão);
 
     message.channel.send(embed)
-};
+}
 
 client.on("guildMemberAdd", member => {
     member.guild.channels.get('476793367334748176').send(member.user.username + ' entrou no sever!');
