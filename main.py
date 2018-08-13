@@ -14,7 +14,6 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith('/loja'):
         msg = 'Olá (0.author.mention) How are you today'.format(message)
-        awiat client.send_message(message.channel, msg)
+        await client.send_message(message.channel, msg)
 
-// THIS  MUST  BE  THIS  WAY
 client.run(process.env(BOT_TOKEN))
