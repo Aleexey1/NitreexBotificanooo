@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 
 bot.on('ready', () => {
-    bot.user.setActivity('/comandos')
+    bot.user.setActivity(`porra nenhuma pq bot n assisti`, {type: "WATCHING"});
     console.log('Logado');
 });
 
