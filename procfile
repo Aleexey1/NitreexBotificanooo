@@ -1,1 +1,1 @@
-main: python "main.py"
+worker: node bot.js
