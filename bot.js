@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 
 
 bot.on('ready', () => {
-    bot.user.setActivity('Entre no Triscord!');
     console.log('Logado');
 });
 
