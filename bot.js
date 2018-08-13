@@ -1,17 +1,17 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const Client = new Discord.Client();
 
 
-bot.on('ready', () => {
+Client.on('ready', () => {
     console.log('Logado');
 });
 
-bot.on("guildMemberAdd", member => {
-    member.guild.channels.get('476793367334748176').send(member.user.username + ' entrou no sevrer!');
+Client.on("guildMemberAdd", member => {
+    member.guild.channels.get('443601735244709918').send(member.user.username + ' entrou no sevrer!');
     member.send('Bem-Vindo ao servidor.');
 });
 
-bot.on('message', message => {
+Client.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
     }
@@ -36,4 +36,4 @@ bot.on('message', message => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
