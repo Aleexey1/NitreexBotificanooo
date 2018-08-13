@@ -22,7 +22,7 @@ client.on('message', message => {
         message.channel.send('Aqui está: http://blastcraft.com.br/');
     }
     if (message.content.startsWith('/comandos')){
-        message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos');
+        message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos - /novaera');
     }
     if (message.content.startsWith('/novaera')){
         message.channel.send('NovaEra, é basicamente um série que está em andamento, o criador dela é o aleexey, não sabemos o máximo de pessoas que tem na série mais ela está bem legal, espro que vocês gostem!');
