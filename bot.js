@@ -1,13 +1,14 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on("guildMemberAdd", member => {
-    member.guild.channels.get('443601735244709918').send(member.user.username + ' entrou no sevrer!');
-    member.send('Bem-Vindo ao servidor.');
-});
 
 bot.on('ready', () => {
     console.log('Logado');
+});
+
+bot.on("guildMemberAdd", member => {
+    member.guild.channels.get('443601735244709918').send(member.user.username + ' entrou no sevrer!');
+    member.send('Bem-Vindo ao servidor.');
 });
 
 bot.on('message', message => {
