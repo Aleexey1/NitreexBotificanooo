@@ -7,7 +7,7 @@ bot.on('ready', () => {
 });
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.get('443601735244709918').send(member.user.username + ' entrou no sevrer!');
+    member.guild.channels.get('443601735244709918').send(member.user.username + 'entrou no sevrer!');
     member.send('Bem-Vindo ao servidor.');
 });
 
