@@ -38,5 +38,12 @@ bot.on('message', message => {
     }
 });
 
+bot.on("ready", async () => {
+
+    console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
+    bot.user.setActivity("tutorials on TSC", {type: "WATCHING"});
+  
+});
+
 // THIS  MUST  BE  THIS  WAY
 bot.login(process.env.BOT_TOKEN);
