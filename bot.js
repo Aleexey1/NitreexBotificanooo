@@ -21,10 +21,10 @@ bot.on('message', message => {
     if (message.content.startsWith('/canal')){
         message.channel.send('Aqui está: https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured');
     }
-    if (message.content.startsWith('/twitter')){
+    if (message.content.startsWith('/twx')){
         message.channel.send('Aqui eatá:  https://twitter.com/Iuquias157');
     } 
-    if (message.content.startsWith('/twx')){
+    if (message.content.startsWith('/twitter')){
         message.channel.send('Twitter:  https://twitter.com/Reckzinnn1');
     } 
     if (message.content.startsWith('/comandos')){
