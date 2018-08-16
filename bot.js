@@ -22,7 +22,7 @@ bot.on('message', message => {
         message.channel.send('Aqui está: https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured');
     }
     if (message.content.startsWith('/twitter')){
-        message.channel.send('Twitter:  twitter.com/Reckyzinn1');
+        message.channel.send('Twitter:  https://twitter.com/Reckzinnn1');
     } 
     if (message.content.startsWith('/comandos')){
         message.channel.send('Meus comandos são: /twitter - /canal ');
