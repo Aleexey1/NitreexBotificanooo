@@ -6,11 +6,6 @@ bot.on('ready', () => {
     console.log('Logado');
 });
 
-bot.on("guildMemberAdd", member => {
-    member.guild.channels.get('476108542202347555').send(member.user.username + ' <- **Olá, seja bem-vindo(a)  🎉🤗 !**');
-    member.send('Bem-Vindo ao servidor.');
-});
-
 bot.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
