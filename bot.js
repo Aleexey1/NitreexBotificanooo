@@ -19,22 +19,13 @@ bot.on('message', message => {
         message.reply('pong');
   	}
     if (message.content.startsWith('/canal')){
-        message.channel.send('Aqui está: https://www.youtube.com/channel/UCvCRTD0r6niKowGIUACV8NQ');
+        message.channel.send('Aqui está: https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured');
     }
     if (message.content.startsWith('/twitter')){
-        message.channel.send('Aqui está: https://twitter.com/AlexeyOficial');
+        message.channel.send('Twitter:  twitter.com/Reckyzinn1');
     } 
-    if (message.content.startsWith('/loja')){
-        message.channel.send('Aqui está: http://blastcraft.com.br/');
-    }
     if (message.content.startsWith('/comandos')){
-        message.channel.send('Meus comandos são: /twitter - /canal - /loja - /comandos - /novaera - /formulário');
-    }
-    if (message.content.startsWith('/novaera')){
-        message.channel.send('NovaEra, é basicamente uma série que está em andamento, o criador dela é o aleexey, não sabemos o máximo de pessoas que tem na série mais ela está bem legal, espro que vocês gostem!');
-    }
-    if (message.content.startsWith('/formulário')){
-        message.channel.send('Aqui está: https://docs.google.com/forms/d/1sTvxslxhG-rhDmkumpYakGhVQEzdeFlALbVUC5D43fo/edit');
+        message.channel.send('Meus comandos são: /twitter - /canal ');
     }
 });
 
