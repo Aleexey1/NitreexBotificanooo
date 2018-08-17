@@ -25,7 +25,7 @@ bot.on('message', message => {
     if (message.content.startsWith('/comandos')){
         message.channel.send('Meus comandos são: /twitter - /canal ');
     }
-    if(message.content.startsWith('tl') && message.channel.id !== "476793367334748176") {
+    if(message.content.startsWith('tl') || message.channel.id !== "476793367334748176") {
     message.reply('Comandos não são permitidos neste canal');
     }
 });
