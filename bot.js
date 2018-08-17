@@ -1,12 +1,11 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 
-bot.on('ready', () => {
+client.on('ready', () => {
     console.log('Logado');
 });
-
-bot.on('message', message => {
+client.on('message', message => {
     if (message.content === 'Oi') {
     	message.reply('Olá, tudo bem ?');
     }
@@ -27,7 +26,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on("ready", async () => {
+client.on("ready", async () => {
 
     console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
     bot.user.setActivity("tutorials on TSC", {type: "WATCHING"});
@@ -35,4 +34,4 @@ bot.on("ready", async () => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
