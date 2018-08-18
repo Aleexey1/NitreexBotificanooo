@@ -26,7 +26,7 @@ client.on('message', message => {
         message.channel.send('Inscritos são àqueles quê vão nos vídeos é deixa seu like, também são aqueles que ativa o sininho pra chegar as notificações, obrigado por está nos acompanhando até hoje, um salve pra você e tchau!!');
     }
     if (message.content.startsWith('/canal')){
-        message.channel.send('Recky : https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured -------------- Slopy : https://www.youtube.com/channel/UCtq7npnD1v-R2bqJFQJkjbA');
+        message.channel.send('Recky : https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured ------ Slopy : https://www.youtube.com/channel/UCtq7npnD1v-R2bqJFQJkjbA');
     }
     let arraymsg = message.content.split(" ");
 let cmd = arraymsg[0].toLowerCase()
