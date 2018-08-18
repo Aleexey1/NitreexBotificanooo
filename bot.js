@@ -19,7 +19,7 @@ client.on('message', message => {
         message.channel.send('Twitter:  https://twitter.com/Reckzinnn1');
     } 
     if (message.content.startsWith('/comandos')){
-        message.channel.send('Meus comandos são: /twitter - /canal - /donos - /inscrito')
+        message.channel.send('Meus comandos são: /twitter - /canal - /donos - /inscrito - /ping')
     }
     if (message.content.startsWith('/donos')){
         message.channel.send('É o Recky e o !👑Slopy👑!');
@@ -27,6 +27,11 @@ client.on('message', message => {
     if (message.content.startsWith('/inscrito')){
         message.channel.send('Inscritos são àqueles quê vão nos vídeos é deixa seu like, também são aqueles que ativa o sininho pra chegar as notificações, obrigado por está nos acompanhando até hoje, um salve pra você e tchau!!');
     }
+    let arraymsg = message.content.split(" ");
+let cmd = arraymsg[0].toLowerCase()
+  if(cmd === '/ping') {
+    message.channel.send('Meu ping é***${Math.round(client.ping)}ms!***');
+  }
 });
 
 client.on("ready", async () => {
