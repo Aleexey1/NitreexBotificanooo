@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 
 client.on('ready', () => {
-    client.user.setgame(`Eu estou em ${client.guilds.size} servidores`);
+    client.user.setPresence({ game: { name: `Oq ele esta jogando`, type: 1, url: 'https://www.twitch.tv/recky} });
     console.log('Logado');
 });
 client.on('message', message => {
