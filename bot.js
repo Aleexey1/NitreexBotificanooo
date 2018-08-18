@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 
 client.on('ready', () => {
+    client.user.setPresence({ game: { name: `Oq ele esta jogando`, type: 1, url: 'https://www.twitch.tv/oficialfrost'} });
     console.log('Logado');
 });
 client.on('message', message => {
