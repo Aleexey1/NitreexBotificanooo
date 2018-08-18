@@ -30,7 +30,7 @@ client.on('message', message => {
     let arraymsg = message.content.split(" ");
 let cmd = arraymsg[0].toLowerCase()
   if(cmd === '/ping') {
-    message.channel.send('Meu ping é***${Math.round(client.ping)}ms!***');
+    message.channel.send(`Meu ping é***${Math.round(client.ping)}ms!***`);
   }
 });
 
