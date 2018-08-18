@@ -46,26 +46,6 @@ let cmd = arraymsg[0].toLowerCase()
         message.channel.send(`O membro ${membro.user.username} foi banido do servidor.\nMotivo: ${razao}`)
   }
 });
-client.on('message', message => {
-  let arraymsg = message.content.split(" ");
-let cmd = arraymsg[0].toLowerCase()
-if(cmd === '/canal'){
-  let embed = new Discord.RichEmbed()
-  .setTitle('Recky')
-  .setURL('https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured')
-  message.channel.send(embed);
-  }
-});
-client.on('message', message => {
-  let arraymsg = message.content.split(" ");
-let cmd = arraymsg[0].toLowerCase()
-if(cmd === '/canal'){
-  let embed = new Discord.RichEmbed()
-  .setTitle('Slopy')
-  .setURL('https://www.youtube.com/channel/UCtq7npnD1v-R2bqJFQJkjbA')
-  message.channel.send(embed);
-  }
-});
 client.on('guildMemberAdd', member => {
   const randomColor = "#000000".replace(/0/g, function () { return (~~(Math.random() * 16)).toString(16); });
  
