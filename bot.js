@@ -19,7 +19,10 @@ client.on('message', message => {
         message.channel.send('Twitter:  https://twitter.com/Reckzinnn1');
     } 
     if (message.content.startsWith('/comandos')){
-        message.channel.send('Meus comandos são: /twitter - /canal ');
+        message.channel.send('Meus comandos são: /twitter - /canal - /donos')
+    }
+    if (message.content.startsWith('/donos')){
+        message.channel.send('É o Recky e o !👑Slopy👑!');
     }
 });
 
