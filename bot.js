@@ -19,10 +19,13 @@ client.on('message', message => {
         message.channel.send('Twitter:  https://twitter.com/Reckzinnn1');
     } 
     if (message.content.startsWith('/comandos')){
-        message.channel.send('Meus comandos são: /twitter - /canal - /donos')
+        message.channel.send('Meus comandos são: /twitter - /canal - /donos - /inscrito')
     }
     if (message.content.startsWith('/donos')){
         message.channel.send('É o Recky e o !👑Slopy👑!');
+    }
+    if (message.content.startsWith('/inscrito')
+        message.channel.send('Inscritos são aqueles quevão nos videos e deixa seu like, também são aqueles que ativa i sininho pra chegar as notificações, obrigado por está nos acompanhando até hoje, um salve pra você e tchau!!');
     }
 });
 
