@@ -13,9 +13,6 @@ client.on('message', message => {
     if (message.content === 'piga'){
         message.reply('pong');
   	}
-    if (message.content.startsWith('/canal')){
-        message.channel.send('Aqui está: https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured');
-    } 
     if (message.content.startsWith('/twitter')){
         message.channel.send('Twitter:  https://twitter.com/Reckzinnn1');
     } 
@@ -59,6 +56,26 @@ client.on('guildMemberAdd', member => {
   .setColor(randomColor)
   .setDescription(`🎈 **|** ${member} **Seja bem-vindo(a) ao nosso servidor.**`)
   canal.send({embed : embed})
+});
+client.on('message', message => {
+  let arraymsg = message.content.split(" ");
+let cmd = arraymsg[0].toLowerCase()
+if(cmd === '/canal'){
+  let embed = new Discord.RichEmbed()
+  .setTitle('Recky')
+  .setURL('https://www.youtube.com/channel/UCKKAEwJ6ArmYaV214-qZ5_g/featured')
+  message.channel.send(embed);
+  }
+});
+client.on('message', message => {
+  let arraymsg = message.content.split(" ");
+let cmd = arraymsg[0].toLowerCase()
+if(cmd === '/canal'){
+  let embed = new Discord.RichEmbed()
+  .setTitle('Slopy')
+  .setURL('https://www.youtube.com/channel/UCtq7npnD1v-R2bqJFQJkjbA')
+  message.channel.send(embed);
+  }
 });
 
 // THIS  MUST  BE  THIS  WAY
