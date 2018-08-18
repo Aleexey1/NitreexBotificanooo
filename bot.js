@@ -33,7 +33,9 @@ let cmd = arraymsg[0].toLowerCase()
   if(cmd === '/ping') {
     message.channel.send(`Meu ping é***${Math.round(client.ping)}ms!***`);
   }
-   let arraymsg = message.content.split(" ");
+});
+client.on('message', message => {
+  let arraymsg = message.content.split(" ");
 let cmd = arraymsg[0].toLowerCase()
   if(cmd === '/ban'){
     const args = message.content.split(" ").slice(1);
@@ -46,13 +48,6 @@ let cmd = arraymsg[0].toLowerCase()
         membro.ban()
         message.channel.send(`O membro ${membro.user.username} foi banido do servidor.\nMotivo: ${razao}`)
   }
-});
-
-client.on("ready", async () => {
-
-    console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-    bot.user.setActivity("tutorials on TSC", {type: "WATCHING"});
-  
 });
 
 // THIS  MUST  BE  THIS  WAY
