@@ -25,7 +25,7 @@ client.on('message', message => {
         message.channel.send('É o Recky e o !👑Slopy👑!');
     }
     if (message.content.startsWith('/inscrito')){
-        message.channel.send('Inscritos são aqueles quevão nos videos e deixa seu like, também são aqueles que ativa i sininho pra chegar as notificações, obrigado por está nos acompanhando até hoje, um salve pra você e tchau!!');
+        message.channel.send('Inscritos são àqueles quê vão nos vídeos é deixa seu like, também são aqueles que ativa o sininho pra chegar as notificações, obrigado por está nos acompanhando até hoje, um salve pra você e tchau!!');
     }
 });
 
